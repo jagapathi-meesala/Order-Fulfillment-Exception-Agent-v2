@@ -25,7 +25,7 @@ Severity is a rule-based triage label. High severity calls for prompt review; me
 ## Outputs and Evidence
 The JSON report includes a status, summary counts, validation issues, findings, evidence, recommended actions, human-review indicators, and limitations. A finding should identify its order when possible, reason code, severity, supporting input values or calculations, and recommended next step.
 
-## Tool: validate_order_data
+## Tool: validate-order-data
 
 ### Inputs and Data Sources
 Receives supplied order records. It does not fetch orders from an external system.
@@ -45,7 +45,7 @@ Malformed input or missing required data must be reported clearly. The agent mus
 ### Human Review
 An operator should correct or verify affected source records before relying on downstream findings.
 
-## Tool: classify_fulfillment_exceptions
+## Tool: classify-fulfillment-exceptions
 
 ### Inputs and Data Sources
 Receives supplied orders, inventory, shipments, and optional configuration.
@@ -65,7 +65,7 @@ Invalid records, missing fields, or unusable timestamps must not be treated as c
 ### Human Review
 An authorized operations team member must verify important findings before changing an order, payment, inventory quantity, or shipment.
 
-## Tool: generate_exception_report
+## Tool: generate-exception-report
 
 ### Inputs and Data Sources
 Receives the analysis result and findings produced from supplied fulfillment records.
