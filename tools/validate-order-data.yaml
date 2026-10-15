@@ -1,0 +1,5 @@
+name: validate-order-data
+description: Validate required order fields and identify duplicate order identifiers.
+inputs: [orders]
+outputs: [validation_issues]
+side_effects: none

@@ -1,0 +1,15 @@
+{
+  "config": {"reference_time": "2026-10-15T12:00:00Z", "in_transit_delay_hours": 48},
+  "orders": [
+    {"order_id": "ORD-1001", "status": "processing", "payment_status": "paid", "items": [{"sku": "SKU-A", "quantity": 3}]},
+    {"order_id": "ORD-1002", "status": "shipped", "payment_status": "pending", "items": [{"sku": "SKU-B", "quantity": 1}]},
+    {"order_id": "ORD-1003", "status": "shipped", "payment_status": "paid", "items": [{"sku": "SKU-C", "quantity": 1}]},
+    {"order_id": "ORD-1004", "status": "cancelled", "payment_status": "paid", "items": []}
+  ],
+  "inventory": [{"sku": "SKU-A", "available": 1}, {"sku": "SKU-B", "available": 5}],
+  "shipments": [
+    {"order_id": "ORD-1002", "carrier_status": "in_transit", "last_event_at": "2026-10-12T00:00:00Z"},
+    {"order_id": "ORD-1003", "carrier_status": "delivery_exception", "last_event_at": "2026-10-15T08:00:00Z"},
+    {"order_id": "ORD-1004", "carrier_status": "in_transit", "last_event_at": "2026-10-15T10:00:00Z"}
+  ]
+}

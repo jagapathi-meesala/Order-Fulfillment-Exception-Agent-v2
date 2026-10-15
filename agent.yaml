@@ -1,0 +1,18 @@
+spec_version: "0.1.0"
+name: order-fulfillment-exception-agent
+version: "1.0.0"
+description: Detects, prioritizes, explains, and recommends human-reviewed actions for order fulfillment exceptions.
+author: jagapathi-meesala
+license: MIT
+runtime:
+  max_turns: 8
+  temperature: 0.2
+  timeout: 60
+skills:
+  - order-exception-triage
+  - inventory-reconciliation
+  - shipping-delay-analysis
+tools:
+  - validate-order-data
+  - classify-fulfillment-exceptions
+  - generate-exception-report

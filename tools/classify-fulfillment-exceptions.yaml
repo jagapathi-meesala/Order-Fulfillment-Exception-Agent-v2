@@ -1,0 +1,5 @@
+name: classify-fulfillment-exceptions
+description: Apply deterministic rules to supplied payment, inventory, and shipment data.
+inputs: [orders, inventory, shipments, config]
+outputs: [findings]
+side_effects: none

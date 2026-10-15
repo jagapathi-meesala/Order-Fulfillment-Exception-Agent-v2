@@ -1,0 +1,5 @@
+name: generate-exception-report
+description: Produce a JSON report with findings, evidence, and human-review actions.
+inputs: [analysis_result]
+outputs: [report_json]
+side_effects: none
